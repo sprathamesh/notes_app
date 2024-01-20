@@ -1,6 +1,13 @@
-# notes_app
+### notes_app
 
-A new Flutter project.
+## Notes App
+A simple Flutter notes app that allows users to create, edit, and delete notes with a user-friendly UI.
+
+## Features
+- Create Notes: Easily create new notes with titles and descriptions.
+- Edit Notes: Modify existing notes to keep information up-to-date.
+- Delete Notes: Remove unwanted notes effortlessly.
+- User-Friendly UI: Intuitive and clean user interface for a seamless user experience.
 
 ## Getting Started
 
