@@ -10,13 +10,13 @@ part 'home_bloc.freezed.dart';
 
 @injectable
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
-  final NotesModelServices _noteModelService;
+  final NotesModelServices _noteModelService;//inject the notemodelservices dependency 
   HomeBloc(this._noteModelService) : super(HomeState.initial()) {
     // get notes
     on<GetNotes>((event, emit) async {
-      emit(state.copyWith(isLoading: true),);
+      emit(state.copyWith(isLoading: true),);//update state to show loading
       final result = await _noteModelService.getNotes();
-      emit(HomeState(isLoading: false, notesModelList: result));
+      emit(HomeState(isLoading: false, notesModelList: result));//update with result
     });
     // add notes to hive
     on<AddNote>((event, emit) async {

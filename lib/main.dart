@@ -42,7 +42,6 @@ class MainApp extends StatelessWidget {
               color: Color.fromARGB(255, 0, 0, 0),
             ),
           ),
-          primarySwatch: primaryMaterialColor,
           floatingActionButtonTheme: const FloatingActionButtonThemeData(
             foregroundColor: primaryOverlay,
           ),
